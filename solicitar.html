@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar Impressão</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid-form { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .input-box { border: 1px solid #ddd; padding: 10px; border-radius: 5px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span>SENAI PRINT HUB</span>
+        <span id="userDisplay"></span>
+    </nav>
+
+    <div class="container">
+        <h2>Solicitar Impressão</h2>
+        
+        <label>Curso:</label>
+        <select class="input-box" style="width: 100%;">
+            <option>Técnico em Mecânica</option>
+        </select>
+
+        <div class="grid-form">
+            <div>
+                <label>Turma:</label>
+                <select class="input-box" style="width: 100%;"><option>2º A</option></select>
+            </div>
+            <div>
+                <label>Apostila:</label>
+                <select class="input-box" style="width: 100%;"><option>Desenho Técnico</option></select>
+            </div>
+        </div>
+
+        <button class="btn-red" style="width: 100%; margin-top: 20px;" onclick="confirmarPedido()">ENVIAR PEDIDO</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

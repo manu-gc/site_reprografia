@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Reprografia - Gestão de Apostilas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>SENAI <span>GESTÃO DE APOSTILAS</span></h1></div>
+        <div class="user-info"><span id="display-user"></span> | <a href="#" onclick="logout()">Sair</a></div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Pedidos para Impressão</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Solicitante</th>
+                        <th>Curso/Turma</th>
+                        <th>Material</th>
+                        <th>Qtd</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carlos Mendes</td>
+                        <td>Qualidade - 1º Ano</td>
+                        <td>Gestão de Processos</td>
+                        <td>35</td>
+                        <td><button class="btn btn-approve" onclick="alert('Iniciando Impressão...')">Imprimir</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

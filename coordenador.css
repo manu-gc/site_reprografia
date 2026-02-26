@@ -1,0 +1,52 @@
+body {
+    background: #eef2f7;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #002f6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #c40000;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.aprovar {
+    background: green;
+    color: white;
+}
+
+.recusar {
+    background: red;
+    color: white;
+}

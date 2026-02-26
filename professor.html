@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar - Gestão de Apostilas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><h1>SENAI <span>GESTÃO DE APOSTILAS</span></h1></div>
+        <div class="user-info">
+            <span id="display-user"></span> | 
+            <a href="#" onclick="logout()">Sair</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Solicitar Impressão</h2>
+            
+            <div class="form-grid">
+                <div class="field">
+                    <label>Curso:</label>
+                    <select id="curso">
+                        <option value="" selected disabled>Selecione o curso...</option>
+                        <option>Eletromecânica</option>
+                        <option>Qualidade</option>
+                        <option>Desenvolvimento de Sistemas</option>
+                        <option>Eletroeletrônica</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Turma:</label>
+                    <select id="turma">
+                        <option value="" selected disabled>Selecione a turma...</option>
+                        <option>9º Ano</option>
+                        <option>1º Ano</option>
+                        <option>2º Ano</option>
+                        <option>3º Ano</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Apostila / Material:</label>
+                    <select id="apostila">
+                        <option value="" selected disabled>Selecione o material...</option>
+                        <option>Introdução à Tecnologia</option>
+                        <option>Cálculo Técnico</option>
+                        <option>Lógica de Programação</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>Quantidade de Cópias:</label>
+                    <input type="number" id="qtd" placeholder="Digite a quantidade">
+                </div>
+            </div>
+            
+            <div class="options-row">
+                <label style="display:block; margin-bottom:10px; font-weight:bold; width: 100%; color: var(--senai-blue);">Tipo de Impressão:</label>
+                <button class="btn btn-toggle" id="btn-pb">Preto e Branco</button>
+                <button class="btn btn-toggle" id="btn-cor">Colorido</button>
+            </div>
+
+            <button class="btn btn-primary" style="width: 100%; height: 55px;" onclick="enviarPedido()">
+                ENVIAR PARA APROVAÇÃO
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
