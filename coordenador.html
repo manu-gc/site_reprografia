@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Coordenação</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>Coordenação</h1>
+</header>
+
+<div class="container">
+<div class="card">
+
+<h2>Pedido</h2>
+
+<p>Quantidade: <span id="qtdPedido"></span></p>
+
+<button class="btn btn-approve" onclick="aprovarPedido()">
+APROVAR
+</button>
+
+<br><br>
+
+<button class="btn btn-blue" onclick="irParaAcompanhamento()">
+VER STATUS
+</button>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("qtdPedido").innerText = localStorage.getItem("qtdPedido");
+</script>
+
+</body>
+</html>

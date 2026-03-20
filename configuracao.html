@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Configuração</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Gestão de Apostilas</h2>
+</div>
+
+<div class="main">
+<div class="header">Configurar Impressão</div>
+
+<div class="container">
+<div class="card">
+
+<label>Tipo:</label>
+<select id="tipo" onchange="calcularValor()">
+    <option>Preto e Branco</option>
+    <option>Colorido</option>
+</select>
+
+<label>Modo:</label>
+<select id="modo" onchange="calcularValor()">
+    <option>Somente Frente</option>
+    <option>Frente e Verso</option>
+</select>
+
+<label>Encadernação:</label>
+<select id="encadernacao" onchange="calcularValor()">
+    <option>Sem Espiral</option>
+    <option>Com Espiral</option>
+</select>
+
+<label>Quantidade:</label>
+<input type="number" id="quantidade" value="1" onchange="calcularValor()">
+
+<h3>Valor Estimado: <span id="valor">R$ 0.00</span></h3>
+
+<br>
+<a href="confirmacao.html">
+<button>Confirmar Pedido</button>
+</a>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
